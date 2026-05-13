@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@domecs/core": ["../domecs/packages/domecs/dist/index.d.ts"],
+      "@domecs/dom": ["../domecs/packages/domecs-dom/dist/index.d.ts"],
+      "@domecs/input": ["../domecs/packages/domecs-input/dist/index.d.ts"]
+    }
+  }
+}

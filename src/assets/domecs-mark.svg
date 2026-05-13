@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DOMECS mark">
+  <rect width="64" height="64" rx="12" fill="#111819"/>
+  <path d="M18 18h16c7 0 12 5 12 14s-5 14-12 14H18V18Z" fill="#2f80ed"/>
+  <path d="M28 25h6c3 0 5 3 5 7s-2 7-5 7h-6V25Z" fill="#eef2ef"/>
+  <circle cx="46" cy="18" r="5" fill="#f2b705"/>
+  <circle cx="18" cy="46" r="5" fill="#12a182"/>
+</svg>

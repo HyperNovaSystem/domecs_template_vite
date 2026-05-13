@@ -1,0 +1,28 @@
+{
+  "name": "domecs-template-vite",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Official DOMECS + Vite app template.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "typecheck:local": "tsc -p tsconfig.local.json"
+  },
+  "dependencies": {
+    "@domecs/core": "^0.1.0-alpha.0",
+    "@domecs/dom": "^0.1.0-alpha.0",
+    "@domecs/input": "^0.1.0-alpha.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "happy-dom": "^15.11.7",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.9"
+  }
+}
