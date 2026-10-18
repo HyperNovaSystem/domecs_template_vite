@@ -22,7 +22,8 @@ npm run build
 
 ## Notes
 
-The app uses `@domecs/core`, `@domecs/dom`, and `@domecs/input`. Pressing the
+The app uses `@domecs/core`, `@domecs/dom`, and `@domecs/input` at `^2.0.0`.
+Keep every `@domecs/*` package you add on the same major version. Pressing the
 Pulse button or clicking the stage emits a `SpawnPulse` event; holding movement
 keys moves the player entity through the tick system.
 
