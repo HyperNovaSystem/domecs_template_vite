@@ -83,7 +83,7 @@ for (const fx of FX_NAMES) {
 const actorView = defineView({
   slot: 'stage',
   query: Has(Actor),
-  changedOn: [Position, Actor, Pulse],
+  changedOn: { mode: 'explicit', types: [Position, Actor, Pulse] },
   create(entity) {
     const el = document.createElement('div')
     renderActor(el, entity)
@@ -132,7 +132,7 @@ world.signals.tickEnd.subscribe(() => {
 
 world.step(0)
 paintHud()
-const stop = world.start({ dtClampMs: 80 })
+const stop = world.startLoop({ dtClampMs: 80 })
 window.addEventListener('beforeunload', stop)
 
 function renderActor(el: HTMLElement, entity: EntityView): void {

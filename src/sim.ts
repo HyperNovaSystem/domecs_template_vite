@@ -1,6 +1,6 @@
 import {
-  Changed,
   Has,
+  OnChanged,
   createWorld,
   defineComponent,
   defineEvent,
@@ -255,8 +255,8 @@ export function createDemoWorld(options: { headless?: boolean } = {}): DemoWorld
     'fx.reactive.position-watch',
     {
       schedule: 'reactive',
-      query: Changed(Position),
-      reactsTo: Changed(Position),
+      query: OnChanged(Position),
+      reactsTo: OnChanged(Position),
     },
     ({ entities }) => {
       const changed = (entities as EntityView[]).length

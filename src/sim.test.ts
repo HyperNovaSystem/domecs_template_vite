@@ -42,8 +42,5 @@ describe('DOMECS Vite template fx demo', () => {
 })
 
 function pulseCount(demo: ReturnType<typeof createDemoWorld>): number {
-  const query = demo.world.query(Has(Pulse))
-  const size = query.size
-  query.dispose()
-  return size
+  return demo.world.countEntities(Has(Pulse))
 }

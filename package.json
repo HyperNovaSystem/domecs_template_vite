@@ -14,9 +14,9 @@
     "typecheck:local": "tsc -p tsconfig.local.json"
   },
   "dependencies": {
-    "@domecs/core": "^0.1.0-alpha.0",
-    "@domecs/dom": "^0.1.0-alpha.0",
-    "@domecs/input": "^0.1.0-alpha.0"
+    "@domecs/core": "^2.0.0",
+    "@domecs/dom": "^2.0.0",
+    "@domecs/input": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
