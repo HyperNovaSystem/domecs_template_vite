@@ -1,8 +1,5 @@
 # Deploy the DOMECS Vite template demo to GitHub Pages.
 # Site: https://hypernovasystem.github.io/domecs_template_vite/
-#
-# @domecs/* come from npm. No lockfile is committed, so install resolves
-# the package.json ranges fresh on every run.
 
 name: Pages
 
@@ -32,7 +29,7 @@ jobs:
         with:
           node-version: 22
 
-      - run: npm install
+      - run: npm ci
 
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b  # v5.0.0
